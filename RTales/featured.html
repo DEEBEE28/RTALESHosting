@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- print restriction -->
+    <link rel="stylesheet" type="text/css" href="print.css" media="print" />
+    
+    <!-- darkmode -->
+    <link rel="stylesheet" type="text/css" href="" id="darkmodelink"/>
+    
+    <title>The Recipe Tales</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-primary navbar-expand" style="background-color: #e1dc98;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/Pics/newlogo.png" alt="The Recipe Tales" width="200" height="80"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="topbar">
+                <ul class="navbar-nav mr-auto container">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="about.html">About</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Recipes
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="featured.html">Featured Recipes</a></li>
+                            <li><a class="dropdown-item" href="allrecipeindex.html">All Recipes</a></li>
+                        </ul>
+                    </li>
+                   <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="login.html">Login</a>
+                    </li>
+                     <input type="button" value="Toggle View" style="position: absolute; right: 0;" id="darkmode">
+                   <script>
+const darkmode=document.querySelector("#darkmode");
+                       const darkmodelink=document.querySelector("#darkmodelink");
+                       darkmode.addEventListener("click",function(){
+                    console.log(darkmodelink.href);
+            
+                           if(darkmodelink.href!="http://127.0.0.1:62544/darkmode.css"){
+                               darkmodelink.href="http://127.0.0.1:62544/darkmode.css";
+                           }
+                           else{
+                               darkmodelink.href="";
+                           }
+                       });
+                       
+               </script>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+
+    <div class="container content mx-auto mt-4" style="width: 90%">
+        <div class="text-center">
+            <h3>Featured Recipes</h3>
+        </div>
+        <div class="row align-items-start mt-4">
+            <div class="col-6 h-100">
+                <img class="img-fluid d-block w-100" src="/Pics/aloo1.jpg" alt="Tangy Potato Sabji" />
+                <span class="border border-5 border-success rounded-3 p-1 d-block">
+                    <h3 class="text-center">Tangy Potato Sabji</h3>
+                    <p>
+                        A tangy stir fry potatoes just gives that extra kick to plain rice or porridge. It does pair well with Khichdi, parathas or even a whole meal bread </p>
+
+                    <br>Servings:4 <br>Cooking time: 17minutes
+
+                    <h5>Ingredients</h5>
+
+                    <ul class="list-unstyled">15g oil
+                        <li>1 dry red chilli</li>
+                        <li>1 cinnamon stick</li>
+                        <li>65g Onion</li>
+                        <li>¼ tsp mustard powder</li>
+                        <li>Pinch of Asafoetida</li>
+                        <li>200g potatoes diced (6cm)</li>
+                        <li>⅓ tsp turmeric powder</li>
+                        <li>6g Salt</li>
+                        <li>150g water</li>
+                        <li>150g tomatoes (quartered)</li>
+                        <li>1 tsp Coriander and Jeera powder</li>
+                        <li>1 tsp Kashmiri chilli powder</li>
+                        <li>½ tsp raw sugar</li>
+                        <li>Fresh coriander leaves</li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li>Preparation</li>
+                        <li>1. Place oil and cinnamon in mixing bowl. Heat:3min/120C/spoon.</li>
+                        <li>2. Add ground mustard,onions and a pinch of asafeotida. Saute:
+                        <li>4 min/120C/spoon</li>
+                        <li>3. Add potatoes, turmeric,salt and water. Cook: 6min/Varoma/spoon</li>
+                        <li>4. Add tomatoes,coriander and jeera powder, chilli powder and sugar</li>
+                        <li>5. Cook: 10 min/120C/spoon</li>
+                        <li>6. Transfer to serving bowl.</li>
+                        <li>7. Garnish with fresh coriander leaves.</li>
+
+                        Variation:
+                        Add frozen peas(50g)at step 4.
+                    </ul>
+                </span>
+            </div>
+            <div class="col-6">
+                <img class="img-fluid d-block w-100" src="/Pics/payasam1.jpg" alt="Caramelised Pudding - South Indian Style" />
+                <span class="border border-5 border-success rounded-3 p-1 d-block">
+                    <h3 class="text-center">Caramelised Pudding - South Indian Style</h3>
+
+                    <p>Desserts made for celebration an occasion in every south indian family...
+                        Caramelised Payasam (Caramelised Rice Pudding) is a favourite sweet.</p>
+
+                    <h5>Ingredients</h5>
+                    <ul class="list-unstyled">Garnishing
+                        <li>12g ghee</li>
+                        <li>5g sg sliced almonds</li>
+                        <li>5g cashew nuts</li>
+                        <li>5g raisins</li>
+                    </ul>
+                    <ul class="list-unstyled">Caramelized Milk
+
+                        <li>100g Brown sugar</li>
+                        <li>80g double cream</li>
+                        <li>100g milk</li>
+                    </ul>
+                    <ul class="list-unstyled">Rice pudding
+                        <li>50g Basmati rice</li>
+                        <li>250g water</li>
+                        <li>¼ tsp Cardamom powder</li>
+                    </ul>
+
+                    <ul class="list-unstyled">Preparation
+                        <li>1. Place a simmering basket and weigh rice. Wash and soak rice for 30 minutes.</li>
+                        <li>2. Prepare garnishing: Add ghee and heat:1min/120C/spoon.</li>
+                        <li>3. Add sliced almonds, cashew nuts and raisins.</li>
+                        <li>4. Saute: 8mins/120C/spoon. Transfer to a bowl.</li>
+                        <li>5. To caramelise sugar: Place sugar and cream in mixing bowl. Heat: 8min/120C/speed1.</li>
+                        <li>6. Add 100g milk, through the lid hole,cover with MC and mix well: 30sec/speed1. Transfer to a bowl.</li>
+                        <li>7. Boil 250gwater on Kettle mode/100C and transfer to a jar.</li> Reserve. Rinse mixing bowl with cold water. Place drained rice in the mixing bowl. Cover with lid and measuring cup. Grind: turbo 2 seconds and scrape down the sides, cover and Turbo again. Scrape down the sides of the mixing bowl and lid.</li>
+                        <li>8. Add reserved hot water to the mixing bowl. Cover with lid.
+                        <li>9. Cook for 10 min/Varoma/reverse speed1 </li>
+                        <li>10. Add Caramelized milk and cook for 5 min/Varoma/reverse speed 1 </li>
+                        <li>11. Transfer to serving bowl and garnish the roasted nuts and raisins.</li>
+                    </ul>
+                </span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer text-center" style="background-color: #e1dc98;">
+        <a href="mailto:sue@therecipetales.com">Contact Us</a>
+    </div>
+
+    <!--Bootstrap Bundle with Popper  for javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+</body>
